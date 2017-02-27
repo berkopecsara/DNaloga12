@@ -43,7 +43,12 @@ for v in seznam_vozil:
 
 print "Vozila: %s" % seznam_vozil
 
-podatki_vozil = open("podatki.txt", "wt")
+
+podatki_vozil = open("podatki.txt","w")
+izberi = input("Izberi vozilo: %s " ) % znamka
+podatki_vozil.write("Odgovor:" + str(izberi))
+podatki_vozil.close()
+
 
 
 
